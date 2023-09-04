@@ -1,8 +1,10 @@
 .wrapper {
   .image_div {
     width: 100%;
+    background-color: black;
     img {
       width: 100%;
+      padding-top: 20px;
     }
   }
 }
