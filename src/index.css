@@ -1,13 +1,180 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --green: #d2f65a;
+  --fair-black: rgba(25, 25, 25, 0.7);
+}
+
+body {
+  font-family: "ClashDisplay-Regular";
+  font-size: 18px;
+}
+@font-face {
+  font-family: "ClashDisplay-Bold";
+  src: url("./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.ttf"),
+    url("./fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Extralight";
+  src: url("./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Extralight.ttf"),
+    url("./fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Extralight.otf");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Light";
+  src: url("./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Light.ttf"),
+    url("./fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Light.otf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Regular";
+  src: url("./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.ttf"),
+    url("./fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Medium";
+  src: url("./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.ttf")
+    url("./fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Semibold";
+  src: url("./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Semibold.ttf"),
+    url("./fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf");
+
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Bold";
+  src: url("./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.ttf"),
+    url("./fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.sw {
+  max-width: 1200px;
+  margin: auto;
+  padding-inline: 20px;
+}
+
+.fw {
+  width: 100%;
+  margin: auto;
+}
+
+h2 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.meta_text {
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 0.8125rem */
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.meta_small {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 0.75rem */
+  letter-spacing: 0.09375rem;
+  text-transform: uppercase;
+}
+
+.heading_small {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 5rem */
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 2.4rem */
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.8rem */
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 1.25rem */
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+button {
+  background-color: var(--green);
+  padding: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c8e95e;
+}
+input {
+  padding: 28px;
+  padding-inline: 24px;
+  border: 2px solid black;
+}
+
+textarea {
+  padding: 28px;
+  padding-inline: 24px;
+  border: 2px solid black;
+  height: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
