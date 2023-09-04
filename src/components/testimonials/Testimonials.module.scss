@@ -1,0 +1,85 @@
+.wrapper {
+  margin-top: 77px;
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 46px;
+    .testimonial {
+      grid-column: span 3;
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .border_top {
+        background-color: black;
+        height: 3px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .number {
+        display: flex;
+        align-items: center;
+        align-items: flex-start;
+
+        .value,
+        .plus {
+          font-family: "ClashDisplay-SemiBold";
+          font-size: clamp(3rem, 4vw, 4rem);
+        }
+
+        .plus {
+          color: var(--green);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    .testimonials {
+      grid-gap: 25px;
+      .testimonial {
+        grid-column: span 12;
+        gap: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .wrapper {
+    .testimonials {
+      grid-gap: 25px;
+      .testimonial {
+        grid-column: span 6;
+        gap: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .wrapper {
+    .testimonials {
+      .testimonial {
+        grid-column: span 4;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .wrapper {
+    .testimonials {
+      grid-gap: 46px;
+      .testimonial {
+        grid-column: span 3;
+      }
+    }
+  }
+}
