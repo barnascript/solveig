@@ -1,0 +1,13 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .image_div {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
