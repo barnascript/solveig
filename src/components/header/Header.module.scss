@@ -11,24 +11,70 @@
     }
 
     nav {
+      position: relative;
       display: flex;
       gap: 48px;
       .links {
         display: flex;
         align-items: center;
         gap: 32px;
+        position: relative;
+        right: 300px;
+
+        a {
+          font-family: "ClashDisplay-Regular";
+          position: relative;
+          font-weight: 600;
+
+          &::before {
+            position: absolute;
+            content: "";
+            background-color: black;
+            height: 1px;
+            width: 0;
+            bottom: -3px;
+            transition: all 0.3s ease;
+          }
+          &:hover::before {
+            width: 100%;
+            transition: all 0.3s ease;
+          }
+        }
       }
 
       button {
+        position: absolute;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 15px;
+        max-width: 230px;
+        right: 0;
+        top: -100%;
+        transition: all 0.3s ease;
+        font-weight: 600;
 
-        gap: 10px;
-        .button_line {
+        .right_button_line {
+          width: 0px;
+          transition: all 0.3s ease;
+        }
+
+        .left_button_line {
           width: 16px;
           height: 1px;
           background-color: black;
+          transition: all 0.3s ease;
+        }
+        &:hover .right_button_line {
+          transition: all 0.3s ease;
+          width: 16px;
+          height: 1px;
+          background-color: black;
+        }
+
+        &:hover .left_button_line {
+          width: 0;
+          transition: all 0.3s ease;
         }
       }
     }

@@ -1,0 +1,62 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 120px;
+  height: 700px;
+  grid-gap: 80px;
+
+  .brand_services {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 200px;
+
+      .name {
+        font-family: "ClashDisplay-SemiBold";
+        font-size: clamp(3rem, 5vw, 5rem);
+      }
+    }
+
+    .person {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      span {
+        color: var(--fair-black);
+      }
+    }
+  }
+
+  .brand_texts {
+    grid-column: span 8;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    .brand_text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 48px;
+      background-color: #f8f8f8;
+
+      .number {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      p {
+        font-family: "Inter", serif;
+      }
+    }
+  }
+}

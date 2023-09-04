@@ -17,10 +17,12 @@ const Header = () => {
           <div className={styles.links}>
             <Link className={` meta_text ${styles.link}`}>WORK</Link>
             <Link className={` meta_text ${styles.link}`}>CONTACT</Link>
+            <Link className={` meta_text ${styles.link}`}>Clone template</Link>
           </div>
           <button className={`meta_small ${styles.button}`}>
-            <div className={`meta_small ${styles.button_line}`}></div>
+            <div className={`meta_small ${styles.left_button_line}`}></div>
             <span>GET IN TOUCH</span>
+            <div className={`meta_small ${styles.right_button_line}`}></div>
           </button>
         </nav>
       </div>
