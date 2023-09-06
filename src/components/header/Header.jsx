@@ -16,8 +16,12 @@ const Header = () => {
         </div>
         <nav>
           <div className={styles.links}>
-            <Link className={` meta_text ${styles.link}`}>WORK</Link>
-            <Link className={` meta_text ${styles.link}`}>CONTACT</Link>
+            <Link to="/work" className={` meta_text ${styles.link}`}>
+              WORK
+            </Link>
+            <Link to="/contact" className={` meta_text ${styles.link}`}>
+              CONTACT
+            </Link>
             <Link className={` meta_text ${styles.link}`}>Clone template</Link>
           </div>
           <div className={styles.button}>

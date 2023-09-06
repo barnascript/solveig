@@ -125,6 +125,14 @@ h2 {
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
+.heading_medium {
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
 .big_text {
   font-size: 5rem;
@@ -170,9 +178,13 @@ button {
 }
 
 input {
-  padding: 28px;
   padding-inline: 24px;
   border: 2px solid black;
+  outline: none;
+  height: 60px;
+}
+input:focus {
+  border: 2px solid var(--green);
 }
 
 textarea {
@@ -180,6 +192,11 @@ textarea {
   padding-inline: 24px;
   border: 2px solid black;
   height: 200px;
+  border: 2px solid black;
+  outline: none;
+}
+textarea:focus {
+  border: 2px solid var(--green);
 }
 
 a {

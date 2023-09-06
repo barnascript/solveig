@@ -1,0 +1,10 @@
+.wrapper {
+  .frames {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    .frame {
+      grid-column: span 6;
+    }
+  }
+}

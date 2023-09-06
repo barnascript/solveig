@@ -4,7 +4,6 @@ import Hero from "../../components/hero/Hero";
 import Testimonials from "../../components/testimonials/Testimonials";
 import MyClients from "../../components/myClients/MyClients";
 import BrandServices from "../../components/brandServices/BrandServices";
-import BrandText from "../../components/brandTexts/BrandText";
 import styles from "./Home.module.scss";
 import SelectedWork from "../../components/selectedWork/SelectedWork";
 import Frames from "../../components/frames/Frames";

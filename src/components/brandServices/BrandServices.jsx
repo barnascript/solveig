@@ -1,6 +1,7 @@
 import styles from "./BrandService.module.scss";
 import star from "../../assets/icons/star.svg";
-import passport from "../../assets/images/passport.png";
+import Passport from "../passport/Passport";
+
 const BrandServices = () => {
   return (
     <div className={`sw ${styles.wrapper}`}>
@@ -10,13 +11,7 @@ const BrandServices = () => {
           <span className={`heading_small ${styles.name}`}>Brand Services</span>
         </div>
         <div className={styles.person}>
-          <img src={passport} alt="brand-designer" />
-          <div className={styles.description}>
-            <h5>HI, I'M FINN</h5>
-            <span className={`meta_text ${styles.position}`}>
-              BRAND DESIGNER
-            </span>
-          </div>
+          <Passport />
         </div>
       </div>
       <div className={styles.brand_texts}>

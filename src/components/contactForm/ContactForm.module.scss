@@ -1,0 +1,22 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 5vw;
+  height: max-content;
+  padding-top: 150px;
+  height: 850px;
+
+  .contact_title {
+    grid-column: span 5;
+  }
+
+  .form {
+    display: flex;
+    justify-self: flex-end;
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+    grid-column: span 7;
+    max-width: 100%;
+  }
+}

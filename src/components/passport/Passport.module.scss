@@ -1,0 +1,11 @@
+.wrapper {
+  .person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    span {
+      color: var(--fair-black);
+    }
+  }
+}
