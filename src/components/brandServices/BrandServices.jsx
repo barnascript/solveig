@@ -23,8 +23,7 @@ const BrandServices = () => {
         {" "}
         <div className={styles.brand_text}>
           <div className={styles.number}>
-            <h3>01</h3>
-            <h3>.</h3>
+            <img src={star} alt="star-logo" />
             <h3>Branding</h3>
           </div>
           <p>
@@ -36,8 +35,8 @@ const BrandServices = () => {
         </div>
         <div className={styles.brand_text}>
           <div className={styles.number}>
-            <h3>02</h3>
-            <h3>.</h3>
+            <img src={star} alt="star-logo" />
+
             <h3>Logo Design</h3>
           </div>
           <p>
@@ -49,8 +48,8 @@ const BrandServices = () => {
         </div>
         <div className={styles.brand_text}>
           <div className={styles.number}>
-            <h3>03</h3>
-            <h3>.</h3>
+            <img src={star} alt="star-logo" />
+
             <h3>Social Media</h3>
           </div>
           <p>
