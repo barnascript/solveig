@@ -5,7 +5,7 @@
   height: 700px;
   grid-gap: 80px;
   width: 100%;
-  margin-bottom: 2000px;
+  margin-bottom: 77px;
 
   .brand_services {
     grid-column: span 4;
@@ -77,6 +77,128 @@
       p {
         font-family: "Inter", serif;
         line-height: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    height: auto;
+    grid-gap: 20px;
+
+    .brand_services {
+      grid-column: span 12;
+      width: 100%;
+
+      .title {
+        margin-bottom: 100px;
+      }
+
+      .person {
+        margin-top: 50px;
+      }
+    }
+
+    .brand_texts {
+      grid-column: span 12;
+
+      .brand_text {
+        padding: 28px;
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 601px) {
+  .wrapper {
+    height: auto;
+    grid-gap: 20px;
+
+    .brand_services {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      grid-column: span 12;
+      width: 100%;
+
+      .title {
+        margin-bottom: 100px;
+      }
+
+      .person {
+        margin-top: 50px;
+      }
+    }
+
+    .brand_texts {
+      grid-column: span 12;
+
+      .brand_text {
+        padding: 28px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .wrapper {
+    grid-gap: 50px;
+
+    .brand_services {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-column: span 4;
+
+      .title {
+        margin-bottom: 100px;
+      }
+
+      .person {
+        margin-top: 50px;
+      }
+    }
+
+    .brand_texts {
+      grid-column: span 8;
+      align-items: flex-end;
+
+      .brand_text {
+        padding: 28px;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .wrapper {
+    grid-gap: 50px;
+
+    .brand_services {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-column: span 4;
+
+      .title {
+        margin-bottom: 100px;
+      }
+
+      .person {
+        margin-top: 50px;
+      }
+    }
+
+    .brand_texts {
+      grid-column: span 8;
+      align-items: flex-end;
+
+      .brand_text {
+        padding: 48px;
+        width: 80%;
       }
     }
   }

@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 77px;
+  overflow: hidden;
+
+  .line_break {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+  }
+
+  .h2s {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+
+    h2 {
+      white-space: nowrap;
+      font-weight: 900;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 2px;
+        background-color: black;
+      }
+    }
+    .dot {
+      width: 2px;
+      height: 2px;
+      background-color: black;
+    }
+  }
+}

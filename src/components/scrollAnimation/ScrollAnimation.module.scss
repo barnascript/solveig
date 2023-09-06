@@ -1,0 +1,39 @@
+.moving_titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--green);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+
+  .moving_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    animation: scroll 10s linear infinite;
+    width: 100%;
+
+    .label {
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .dot {
+      width: 2px;
+      height: 2px;
+      background-color: black;
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+}

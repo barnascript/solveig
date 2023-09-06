@@ -4,6 +4,7 @@ import star_logo from "../../assets/icons/star-logo.svg";
 import { LiaTimesSolid } from "react-icons/lia";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
+import Button from "../button/Button";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -19,11 +20,9 @@ const Header = () => {
             <Link className={` meta_text ${styles.link}`}>CONTACT</Link>
             <Link className={` meta_text ${styles.link}`}>Clone template</Link>
           </div>
-          <button className={`meta_small ${styles.button}`}>
-            <div className={`meta_small ${styles.left_button_line}`}></div>
-            <span>GET IN TOUCH</span>
-            <div className={`meta_small ${styles.right_button_line}`}></div>
-          </button>
+          <div className={styles.button}>
+            <Button text="GET IN TOUCH" />
+          </div>
         </nav>
       </div>
       <div className={`sw ${styles.mobile_container}`}>
