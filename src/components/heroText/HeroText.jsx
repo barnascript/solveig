@@ -7,7 +7,9 @@ const HeroText = () => {
       <div className={styles.image_div}>
         <img src={hero_text} alt="hero" />
       </div>
-      <h2>Brand Designer from Berlin</h2>
+      <div className={styles.h2}>
+        <h2>Brand Designer from Berlin</h2>
+      </div>
     </div>
   );
 };
