@@ -4,7 +4,8 @@ import Frame from "../../components/frames/frame/Frame";
 import frame1 from "../../assets/images/frame1.png";
 import frame2 from "../../assets/images/frame2.png";
 import frame3 from "../../assets/images/frame3.png";
-import hero from "../../assets/images/hero.jpg";
+import ScrollAnimation from "../../components/scrollAnimation/ScrollAnimation";
+import Footer from "../../components/footer/Footer";
 
 const Work = () => {
   return (
@@ -45,6 +46,13 @@ const Work = () => {
           <Frame image={frame1} title="DESIGN AGENCY" category="BRANDING" />
         </div>
       </div>
+
+      <ScrollAnimation
+        text="LET'S WORK TOGETHER"
+        text1="LET'S WORK TOGETHER"
+        text2="LET'S WORK TOGETHER"
+      />
+      <Footer />
     </div>
   );
 };

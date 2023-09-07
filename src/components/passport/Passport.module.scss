@@ -3,6 +3,10 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    img {
+      max-width: 81px;
+      max-height: 81px;
+    }
 
     span {
       color: var(--fair-black);

@@ -1,14 +1,14 @@
 import styles from "./Passport.module.scss";
 import passport from "../../assets/images/passport.png";
 
-const Passport = () => {
+const Passport = ({ image, name, skill }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.person}>
-        <img src={passport} alt="brand-designer" />
+        <img src={image} alt="brand-designer" />
         <div className={styles.description}>
-          <h5>HI, I'M FINN</h5>
-          <span className={`meta_text ${styles.position}`}>BRAND DESIGNER</span>
+          <h5>{name}</h5>
+          <span className={`meta_text ${styles.position}`}>{skill}</span>
         </div>
       </div>
     </div>

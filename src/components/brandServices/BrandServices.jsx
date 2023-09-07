@@ -1,6 +1,7 @@
 import styles from "./BrandService.module.scss";
 import star from "../../assets/icons/star.svg";
 import Passport from "../passport/Passport";
+import passport from "../../assets/images/passport.png";
 
 const BrandServices = () => {
   return (
@@ -11,7 +12,11 @@ const BrandServices = () => {
           <span className={`heading_small ${styles.name}`}>Brand Services</span>
         </div>
         <div className={styles.person}>
-          <Passport />
+          <Passport
+            image={passport}
+            name="HI, I'M FINN"
+            skill="BRAND DESIGNER"
+          />
         </div>
       </div>
       <div className={styles.brand_texts}>

@@ -13,7 +13,9 @@ const Footer = () => {
           <div className={styles.links}>
             <Link className={styles.link}>HOME</Link>
             <Link className={styles.link}>WORK</Link>
-            <Link className={styles.link}>WORK SINGLE</Link>
+            <Link to="/work-single" className={styles.link}>
+              WORK SINGLE
+            </Link>
             <Button text="MORE TEMPLATES" />
           </div>
         </div>

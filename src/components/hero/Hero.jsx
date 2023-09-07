@@ -1,8 +1,7 @@
 import styles from "./Hero.module.scss";
-import hero from "../../assets/images/hero.jpg";
 import ScrollAnimation from "../scrollAnimation/ScrollAnimation";
 
-const Hero = () => {
+const Hero = ({ image }) => {
   return (
     <div className={`sw ${styles.wrapper}`}>
       <div className={styles.image_div}>
@@ -12,7 +11,7 @@ const Hero = () => {
           text2="SOCIAL MEDIA"
           dot=""
         />
-        <img src={hero} alt="" />
+        <img src={image} alt="hero" />
       </div>
     </div>
   );

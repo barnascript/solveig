@@ -1,0 +1,13 @@
+.images {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 24px;
+
+  .image_div {
+    width: 100%;
+    grid-column: span 6;
+    img {
+      width: 100%;
+    }
+  }
+}

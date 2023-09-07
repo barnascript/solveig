@@ -12,7 +12,9 @@ const Header = () => {
     <div className={`fw ${styles.wrapper}`}>
       <div className={`sw ${styles.container}`}>
         <div className={styles.logo}>
-          <img src={star_logo} alt="logo" />
+          <Link to="/">
+            <img src={star_logo} alt="logo" />
+          </Link>
         </div>
         <nav>
           <div className={styles.links}>

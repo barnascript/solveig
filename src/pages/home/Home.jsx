@@ -10,17 +10,18 @@ import Frames from "../../components/frames/Frames";
 import GetInTouch from "../../components/getInTouch/GetInTouch";
 import ScrollAnimation from "../../components/scrollAnimation/ScrollAnimation";
 import Footer from "../../components/footer/Footer";
+import hero from "../../assets/images/hero.jpg";
 
 const Home = () => {
   return (
     <div className={styles.wrapper}>
       <Header />
       <HeroText />
-      <Hero />
+      <Hero image={hero} />
       <Testimonials />
       <MyClients />
       <BrandServices />
-      <SelectedWork />
+      <SelectedWork text="SELECTED WORK" />
       <div className={styles.frames}>
         <Frames />
       </div>
