@@ -30,7 +30,6 @@ const Footer = () => {
       </div>
       <div className={`sw ${styles.container2}`}>
         <span className={`meta_text ${styles.copyright}`}>
-          {" "}
           © 2022 Made by Pawel Gola. Powered by Webflow
         </span>
         <div className={styles.snippets}>
