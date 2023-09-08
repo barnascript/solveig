@@ -14,13 +14,16 @@
       justify-content: flex-start;
       height: 100px;
       overflow: hidden;
+      .name {
+        animation: 1.5s slide-up2 ease;
+      }
 
       .border_top {
         background-color: black;
         height: 3px;
         width: 100%;
         margin-bottom: 15px;
-        animation: slideOut 4s ease;
+        animation: slideOut 1.5s ease;
       }
 
       @keyframes slideOut {
@@ -37,17 +40,13 @@
         align-items: center;
         align-items: flex-start;
         overflow: hidden;
-
-        .name {
-          animation: 2s slide-up ease-out;
-          height: 100px;
-        }
+        height: 100px;
+        animation: 1.5s slide-up ease;
 
         .value,
         .plus {
           font-family: "ClashDisplay-SemiBold";
           font-size: clamp(3rem, 4vw, 4rem);
-          animation: 2s slide-up ease-out;
         }
         .plus {
           color: var(--green);
@@ -56,8 +55,23 @@
 
       @keyframes slide-up {
         0% {
-          margin-top: 100%;
+          margin-top: 20%;
           height: 200%;
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.8;
+        }
+        100% {
+          margin-top: 0%;
+          height: 500%;
+          opacity: 1;
+        }
+      }
+      @keyframes slide-up2 {
+        0% {
+          margin-top: 50%;
+          height: 150%;
           opacity: 0;
         }
         50% {

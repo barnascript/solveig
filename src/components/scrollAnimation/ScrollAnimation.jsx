@@ -29,6 +29,22 @@ const ScrollAnimation = ({ text, text1, text2, dot }) => {
         <span className={styles.dot}></span>
         <span className={styles.label}>{text2}</span>
         <span className={styles.dot}></span>
+        <span className={styles.label}>{text2}</span>
+        <div className={styles.dot}></div>
+        <span className={styles.label}>{text}</span>
+        <div className={styles.dot}></div>
+        <span className={styles.label}>{text1}</span>
+        <div className={styles.dot}></div>
+        <span className={styles.label}>{text2}</span>
+        <div className={styles.dot}></div>
+        <span className={styles.label}>{text2}</span>
+        <div className={styles.dot}></div>
+        <span className={styles.label}>{text}</span>
+        <div className={styles.dot}></div>
+        <span className={styles.label}>{text1}</span>
+        <div className={styles.dot}></div>
+        <span className={styles.label}>{text2}</span>
+        <div className={styles.dot}></div>
       </div>
     </div>
   );

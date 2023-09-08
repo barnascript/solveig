@@ -12,12 +12,22 @@ const MyClients = () => {
         <div className={styles.line}></div>
         <span className={`meta_text ${styles.title}`}>My Client</span>
       </div>
-      <div className={styles.icons}>
-        <img src={logo_company} alt="" />
-        <img src={logoipsum} alt="" />
-        <img src={logoa} alt="" />
-        <img src={logob} alt="" />
-        <img src={logoc} alt="" />
+      <div className={styles.icons_div}>
+        <div className={styles.icons}>
+          <img src={logo_company} alt="" />
+        </div>
+        <div className={styles.icons}>
+          <img src={logoipsum} alt="" />
+        </div>
+        <div className={styles.icons}>
+          <img src={logoa} alt="" />
+        </div>
+        <div className={styles.icons}>
+          <img src={logob} alt="" />
+        </div>
+        <div className={styles.icons}>
+          <img src={logoc} alt="" />
+        </div>
       </div>
     </div>
   );

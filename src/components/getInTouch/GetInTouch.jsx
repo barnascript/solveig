@@ -7,9 +7,11 @@ const GetInTouch = () => {
     <div className={`fw ${styles.wrapper}`}>
       <div className={`sw ${styles.container}`}>
         <img src={star} alt={star} />
-        <span className={styles.create_brand}>
-          Let’s create your new brand{" "}
-        </span>
+        <div className={styles.create_brand_div}>
+          <span className={styles.create_brand}>
+            Let’s create your new brand{" "}
+          </span>
+        </div>
         <div className={styles.button}>
           <Button text="GET IN TOUCH" />
         </div>

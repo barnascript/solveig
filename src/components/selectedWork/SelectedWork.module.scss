@@ -8,6 +8,17 @@
     height: 3px;
     width: 100%;
     background-color: black;
+    animation: slideRight 2s ease;
+  }
+
+  @keyframes slideRight {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 100%;
+    }
   }
 
   .h2s {
@@ -15,6 +26,7 @@
     align-items: center;
     gap: 20px;
     padding-top: 20px;
+    animation: scroll 1s ease;
 
     h2 {
       white-space: nowrap;
@@ -33,6 +45,24 @@
       width: 2px;
       height: 2px;
       background-color: black;
+    }
+
+    @keyframes scroll-animation {
+      to {
+        transform: translate3d(5.1258vw, 0px, 0px) scale3d(1, 1, 1);
+      }
+    }
+
+    /* Style the element to be animated */
+    .scroll-animation {
+      width: 100px; /* Adjust as needed */
+      height: 100px; /* Adjust as needed */
+      background-color: blue; /* Adjust as needed */
+    }
+  }
+  @keyframes scroll {
+    to {
+      transform: translate3d(5.1258vw, 0px, 0px) scale3d(1, 1, 1);
     }
   }
 }

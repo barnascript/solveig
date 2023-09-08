@@ -13,8 +13,10 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
-    animation: scroll 10s linear infinite;
+    animation: scroll 40s linear infinite;
+    scroll-behavior: smooth;
     width: 100%;
+    position: relative;
 
     .label {
       white-space: nowrap;
@@ -29,11 +31,11 @@
 
   @keyframes scroll {
     0% {
-      transform: translate3d(0, 0, 0);
+      left: 100%;
     }
 
     100% {
-      transform: translate3d(-50%, 0, 0);
+      left: -100%;
     }
   }
 }
