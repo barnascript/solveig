@@ -1,5 +1,4 @@
 import styles from "./Passport.module.scss";
-import passport from "../../assets/images/passport.png";
 
 const Passport = ({ image, name, skill }) => {
   return (

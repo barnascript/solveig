@@ -11,20 +11,22 @@ const Work = () => {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <span
-        className={`heading_medium ${styles.work_text}`}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontFamily: "ClashDisplay-Bold",
-          paddingTop: "50px",
-          paddingBottom: "100px",
-          fontSize: "clamp(3rem, 8vw, 7rem)",
-        }}
-      >
-        WORK
-      </span>
+      <div className={styles.work_text_div}>
+        <span
+          className={`heading_medium ${styles.work_text}`}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontFamily: "ClashDisplay-Bold",
+            paddingTop: "50px",
+            paddingBottom: "100px",
+            fontSize: "clamp(3rem, 8vw, 7rem)",
+          }}
+        >
+          WORK
+        </span>
+      </div>
       <div className={`sw ${styles.frames}`}>
         <div className={`sw ${styles.frame}`}>
           {" "}
@@ -46,13 +48,16 @@ const Work = () => {
           <Frame image={frame1} title="DESIGN AGENCY" category="BRANDING" />
         </div>
       </div>
-
-      <ScrollAnimation
-        text="LET'S WORK TOGETHER"
-        text1="LET'S WORK TOGETHER"
-        text2="LET'S WORK TOGETHER"
-      />
-      <Footer />
+      <div>
+        <ScrollAnimation
+          text="LET'S WORK TOGETHER"
+          text1="LET'S WORK TOGETHER"
+          text2="LET'S WORK TOGETHER"
+        />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

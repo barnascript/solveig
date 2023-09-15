@@ -28,7 +28,7 @@
       align-items: center;
       max-width: 90%;
       overflow: hidden;
-      height: 100%;
+      max-height: 155px;
 
       .create_brand {
         font-family: "ClashDisplay-SemiBold";
@@ -66,116 +66,29 @@
     .container {
       .create_brand_div {
         max-width: 100%;
-        max-height: 180px;
+        max-height: 228px;
       }
     }
   }
 }
-@media screen and (min-width: 501px) {
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
   .wrapper {
     .container {
       .create_brand_div {
         max-width: 100%;
-        max-height: 100px;
+        max-height: 190px;
       }
     }
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 601px) and (max-width: 1100px) {
   .wrapper {
     .container {
       .create_brand_div {
         max-width: 100%;
-        max-height: 85px;
+        max-height: 130px;
       }
     }
   }
 }
-@media screen and (min-width: 701px) {
-  .wrapper {
-    .container {
-      .create_brand_div {
-        max-width: 100%;
-        max-height: 95px;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1001px) {
-  .wrapper {
-    .container {
-      .create_brand_div {
-        max-width: 100%;
-        max-height: 200px;
-      }
-    }
-  }
-}
-// @media screen and (min-width: 401px) {
-//   .wrapper {
-//     .container {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       justify-content: center;
-//       gap: 32px;
-//       padding-top: 128px;
-//       padding-bottom: 160px;
-
-//       .create_brand_div {
-//         max-width: 100%;
-//         height: 120px;
-
-//         .create_brand {
-//           animation: slide-up 2s ease;
-//         }
-//       }
-
-//       @keyframes slide-up {
-//         0% {
-//           margin-top: 100%;
-//           height: 200%;
-//         }
-
-//         100% {
-//           margin-top: 0%;
-//           height: 80%;
-//         }
-//       }
-//     }
-//   }
-// }
-// @media screen and (min-width: 701px) {
-//   .wrapper {
-//     .container {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       justify-content: center;
-//       gap: 32px;
-//       padding-top: 128px;
-//       padding-bottom: 160px;
-
-//       .create_brand_div {
-//         max-width: 100%;
-//         height: 160px;
-
-//         .create_brand {
-//           animation: slide-up 2s ease;
-//         }
-//       }
-
-//       @keyframes slide-up {
-//         0% {
-//           margin-top: 100%;
-//           height: 200%;
-//         }
-
-//         100% {
-//           margin-top: 0%;
-//           height: 110%;
-//         }
-//       }
-//     }
-//   }
-// }

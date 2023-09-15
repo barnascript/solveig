@@ -1,5 +1,6 @@
 import styles from "./ContactTitle.module.scss";
 import Passport from "../passport/Passport";
+import passport from "../../assets/images/passport.png";
 
 const ContactTitle = () => {
   return (
@@ -13,7 +14,7 @@ const ContactTitle = () => {
           GET IN TOUCH
         </span>
       </div>
-      <Passport />
+      <Passport image={passport} name="LEWIN JONES" skill="WEB DEVELOPER" />
     </div>
   );
 };
