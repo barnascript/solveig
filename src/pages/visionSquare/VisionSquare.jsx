@@ -20,6 +20,7 @@ const VisionSquare = () => {
         style={{
           display: "flex",
           alignItems: "center",
+          textAlign: "center",
           justifyContent: "center",
           fontFamily: "ClashDisplay-Bold",
           paddingTop: "50px",

@@ -5,3 +5,14 @@
   margin-top: 77px;
   margin-bottom: 77px;
 }
+@media screen and (max-width: 700px) {
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

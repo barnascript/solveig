@@ -8,3 +8,32 @@
     grid-column: span 3;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-gap: 30px;
+
+    .work_detail {
+      grid-column: span 12;
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .wrapper {
+    grid-gap: 30px;
+
+    .work_detail {
+      grid-column: span 6;
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    grid-gap: 30px;
+
+    .work_detail {
+      grid-column: span 3;
+    }
+  }
+}
