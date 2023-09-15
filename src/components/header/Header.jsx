@@ -24,7 +24,9 @@ const Header = () => {
             <Link to="/contact" className={` meta_text ${styles.link}`}>
               CONTACT
             </Link>
-            <Link className={` meta_text ${styles.link}`}>Clone template</Link>
+            <Link to="/work-single" className={` meta_text ${styles.link}`}>
+              WORK SINGLE
+            </Link>
           </div>
           <div className={styles.button}>
             <Button text="GET IN TOUCH" />
