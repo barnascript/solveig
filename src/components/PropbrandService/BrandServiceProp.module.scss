@@ -74,6 +74,7 @@
   .wrapper {
     height: auto;
     grid-gap: 20px;
+    width: 100%;
 
     .brand_services {
       grid-column: span 12;
@@ -86,6 +87,7 @@
 
     .brand_texts {
       grid-column: span 12;
+      width: 100%;
 
       .brand_text {
         padding: 28px;

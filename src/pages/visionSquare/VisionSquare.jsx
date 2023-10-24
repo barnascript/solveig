@@ -25,7 +25,8 @@ const VisionSquare = () => {
           fontFamily: "ClashDisplay-Bold",
           paddingTop: "50px",
           paddingBottom: "100px",
-          fontSize: "clamp(3rem, 8vw, 7rem)",
+          fontSize: "clamp(2.2rem, 8vw, 6 rem)",
+          paddingInline: "10px",
         }}
       >
         VISION SQUARE

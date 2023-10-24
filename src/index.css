@@ -144,7 +144,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 2.4rem */

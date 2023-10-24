@@ -24,6 +24,7 @@
   .h2s {
     display: flex;
     align-items: center;
+
     gap: 20px;
     padding-top: 20px;
     animation: scroll 1s ease;
@@ -32,19 +33,11 @@
       white-space: nowrap;
       font-weight: 900;
       position: relative;
-
-      &::before {
-        position: absolute;
-        content: "";
-        width: 2px;
-        height: 2px;
-        background-color: black;
-      }
     }
+
     .dot {
-      width: 2px;
-      height: 2px;
-      background-color: black;
+      display: flex;
+      align-self: flex-start;
     }
 
     @keyframes scroll-animation {

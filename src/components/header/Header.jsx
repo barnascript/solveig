@@ -54,13 +54,19 @@ const Header = () => {
         {toggleMenu && (
           <nav>
             <div className={styles.links}>
-              <Link className={` meta_text ${styles.link}`}>WORK</Link>
-              <Link className={` meta_text ${styles.link}`}>CONTACT</Link>
+              <Link to="/work" className={` meta_text ${styles.link}`}>
+                WORK
+              </Link>
+              <Link to="/contact" className={` meta_text ${styles.link}`}>
+                CONTACT
+              </Link>
             </div>
-            <button className={`meta_small ${styles.button}`}>
-              <div className={`meta_small ${styles.button_line}`}></div>
-              <span>GET IN TOUCH</span>
-            </button>
+            <Link to="/work-single">
+              <button className={`meta_small ${styles.button}`}>
+                <div className={`meta_small ${styles.button_line}`}></div>
+                <span>GET IN TOUCH</span>
+              </button>
+            </Link>
           </nav>
         )}
       </div>

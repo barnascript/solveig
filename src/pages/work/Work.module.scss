@@ -1,12 +1,9 @@
 .wrapper {
   .frames {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
     margin-bottom: 100px;
-
-    .frame {
-      grid-column: span 6;
-    }
   }
 
   .work_text_div {

@@ -26,17 +26,17 @@ const SelectedWork = ({ text }) => {
       <span className={styles.line_break}></span>
       <div className={styles.h2s}>
         <h2>{text}</h2>
-        <div className={styles.dot}></div>
+        <div className={styles.dot}>.</div>
         <h2>{text}</h2>
-        <div className={styles.dot}></div>
+        <div className={styles.dot}>.</div>
         <h2>{text}</h2>
-        <div className={styles.dot}></div>
+        <div className={styles.dot}>.</div>
         <h2>{text}</h2>
-        <div className={styles.dot}></div>
+        <div className={styles.dot}>.</div>
         <h2>{text}</h2>
-        <div className={styles.dot}></div>
+        <div className={styles.dot}>.</div>
         <h2>{text}</h2>
-        <div className={styles.dot}></div>
+        <div className={styles.dot}>.</div>
       </div>
     </div>
   );
